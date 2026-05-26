@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use OSSA, please cite it as below."
+title: "OSSA: Open Sparse Subquadratic Attention"
+authors:
+  - name: "NARE Labs"
+date-released: 2026-05-26
+license: Apache-2.0
+url: "https://github.com/narelabs/ossa"
+repository-code: "https://github.com/narelabs/ossa"
+type: software
+abstract: >
+  OSSA is a research-grade retrofit recipe that adds content-routed sparse
+  attention to a frozen Hugging Face causal language model. A small per-layer
+  router (~17k params) learns to predict which keys carry the bulk of dense
+  attention mass; at inference the wrapped layer attends only to those keys.
+  The repository contains a sparsity probe, oracle ceiling sweep, router
+  distillation training, end-to-end perplexity benchmarks, and a true
+  O(N*K) sparse attention forward.
+keywords:
+  - sparse-attention
+  - long-context
+  - transformer
+  - language-model
+  - retrofit
+  - inference
