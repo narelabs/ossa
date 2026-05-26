@@ -22,6 +22,9 @@ without computing the full Q·K^T.
 We trained one such router. **17 408 parameters, 22 minutes on an RTX 3050,
 and +2.3 % perplexity at top-K = 64 of 512** on layer 14 of Qwen-1.5B.
 
+![oracle ceiling](bench/figures/oracle_ceiling.png)
+![router vs oracle](bench/figures/router_vs_oracle.png)
+
 ---
 
 ## Headline numbers
